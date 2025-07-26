@@ -209,21 +209,6 @@ The frontend will start on `http://localhost:5173`.
 
 Open your browser and navigate to `http://localhost:5173`
 
-### Production Mode
-
-1. **Build the Frontend:**
-
-```bash
-cd frontend
-npm run build
-```
-
-2. **Start the Backend in Production:**
-
-```bash
-cd server
-npm start
-```
 
 ### First Time Setup
 
