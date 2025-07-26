@@ -85,15 +85,14 @@ _Form to update existing issues_
 
 The application is successfully deployed and accessible online:
 
-- **Frontend (Vercel):** [https://your-app-name.vercel.app](https://your-app-name.vercel.app)
-- **Backend API (Railway):** [https://your-api-name.railway.app](https://your-api-name.railway.app)
+- **Frontend (Vercel):** [https://your-app-name.vercel.app](https://issue-tracker-ivory-omega.vercel.app/)
+- **Backend API (Railway):** [issue-tracker-production-87cf.up.railway.app](https://your-api-name.railway.app)
 
 ### Deployment Status
 
 - ✅ Frontend: Successfully deployed on **Vercel**
 - ✅ Backend: Successfully deployed on **Railway**
 - ✅ Database: **MongoDB Atlas** (Cloud)
-- ✅ Full CORS configuration for cross-origin requests
 
 ## 🛠️ Tech Stack
 
