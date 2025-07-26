@@ -85,8 +85,8 @@ _Form to update existing issues_
 
 The application is successfully deployed and accessible online:
 
-- **Frontend (Vercel):** [Frontend](https://issue-tracker-ivory-omega.vercel.app/)
-- **Backend API (Railway):** [Backend](issue-tracker-production-87cf.up.railway.app)
+- **(Vercel):** [Frontend](https://issue-tracker-ivory-omega.vercel.app/)
+- **(Railway):** [Backend](issue-tracker-production-87cf.up.railway.app)
 
 ### Deployment Status
 
@@ -379,36 +379,6 @@ Issue-Tracker/
 - `npm start` - Start production server
 - `npm run dev` - Start development server with nodemon
 
-## 🔧 Troubleshooting
-
-### Common Issues
-
-1. **MongoDB Connection Error:**
-
-   - Ensure MongoDB is running locally or check Atlas connection string
-   - Verify MONGODB_URI in .env file
-
-2. **CORS Errors:**
-
-   - Check CLIENT_URL in backend .env
-   - Ensure frontend URL matches CORS configuration
-
-3. **JWT Token Issues:**
-
-   - Clear localStorage in browser developer tools
-   - Check JWT_SECRET in .env file
-
-4. **Port Conflicts:**
-   - Backend default: 5000
-   - Frontend default: 5173
-   - Change ports in package.json scripts if needed
-
-### Development Tips
-
-- Use browser developer tools to inspect network requests
-- Check browser console for error messages
-- Monitor backend console for server errors
-- Use MongoDB Compass for database inspection
 
 ## 👨‍💻 Author
 
