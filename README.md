@@ -145,8 +145,7 @@ touch .env
 ```env
 # Database Configuration
 MONGODB_URI=mongodb://localhost:27017/issue-tracker
-# For MongoDB Atlas: mongodb+srv://username:password@cluster.mongodb.net/issue-tracker
-
+# For MongoDB Atlas: mongodb+srv://<username>:<password>@<cluster>.mongodb.net/issue-tracker
 # JWT Configuration
 JWT_SECRET=your-super-secret-jwt-key-here
 JWT_EXPIRES_IN=7d
