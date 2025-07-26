@@ -6,12 +6,17 @@ A full-stack MERN (MongoDB, Express.js, React, Node.js) application for tracking
 
 - [Features](#features)
 - [Demo Screenshots](#demo-screenshots)
+- [Live Demo](#live-demo)
 - [Tech Stack](#tech-stack)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
+- [Deployment](#deployment)
 - [API Endpoints](#api-endpoints)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## ✨ Features
 
@@ -75,6 +80,20 @@ _Form to create new issues_
 _Form to update existing issues_
 
 > **Note:** Screenshots are located in the `screenshots/` folder.
+
+## 🌐 Live Demo
+
+The application is successfully deployed and accessible online:
+
+- **Frontend (Vercel):** [https://your-app-name.vercel.app](https://your-app-name.vercel.app)
+- **Backend API (Railway):** [https://your-api-name.railway.app](https://your-api-name.railway.app)
+
+### Deployment Status
+
+- ✅ Frontend: Successfully deployed on **Vercel**
+- ✅ Backend: Successfully deployed on **Railway**
+- ✅ Database: **MongoDB Atlas** (Cloud)
+- ✅ Full CORS configuration for cross-origin requests
 
 ## 🛠️ Tech Stack
 
@@ -214,7 +233,42 @@ npm start
 3. After registration/login, you'll be redirected to the issue list
 4. Click "Create Issue" to add first issue
 
-## 🔗 API Endpoints
+## � Deployment
+
+This application has been successfully deployed using modern cloud platforms:
+
+### Frontend Deployment (Vercel)
+
+- **Platform:** [Vercel](https://vercel.com/)
+- **Build Command:** `npm run build`
+- **Output Directory:** `dist`
+- **Environment Variables:** None required (API URL configured)
+
+### Backend Deployment (Railway)
+
+- **Platform:** [Railway](https://railway.app/)
+- **Start Command:** `npm start`
+- **Environment Variables:**
+  - `MONGO_URI` - MongoDB Atlas connection string
+  - `JWT_SECRET` - JWT signing secret
+  - `PORT` - Auto-assigned by Railway
+  - `NODE_ENV=production`
+
+### Database
+
+- **MongoDB Atlas** - Cloud-hosted MongoDB database
+- Configured for production with proper connection pooling
+- Secured with IP whitelisting and authentication
+
+### Deployment Features
+
+- ✅ Automatic deployments on push to main branch
+- ✅ HTTPS enabled for both frontend and backend
+- ✅ Environment-specific configurations
+- ✅ CORS properly configured for cross-origin requests
+- ✅ Production-optimized builds
+
+## �🔗 API Endpoints
 
 ### Authentication Routes (`/api/auth`)
 
