@@ -1,0 +1,6 @@
+@import "tailwindcss";
+/* index.css */
+:root {
+  --background: 215 27.9% 96.9%;
+  --foreground: 222.2 84% 4.9%;
+}
