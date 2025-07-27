@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { API_ENDPOINTS } from "../config/api";
 
 
 const IssueCreate = () => {
@@ -24,7 +25,7 @@ const IssueCreate = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:5000/api/issues", formData);
+            await axios.post(API_ENDPOINTS.ISSUES, formData);
             navigate("/");
         } catch (err) {
             console.error("Error creating issue:", err);

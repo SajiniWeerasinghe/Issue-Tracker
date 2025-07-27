@@ -4,6 +4,7 @@ import axios from "axios";
 import { Edit, Trash2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { API_ENDPOINTS } from "../config/api";
 
 
 const IssueDetails = () => {
@@ -16,7 +17,7 @@ const IssueDetails = () => {
     const handleDelete = async () => {
         if (window.confirm("Are you sure you want to delete this issue?")) {
             try {
-                await axios.delete(`http://localhost:5000/api/issues/${id}`);
+                await axios.delete(API_ENDPOINTS.ISSUE(id));
                 navigate("/"); // Redirect to the issue list
             } catch (err) {
                 console.error("Error deleting issue:", err);
@@ -25,7 +26,7 @@ const IssueDetails = () => {
     };
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/api/issues/${id}`)
+        axios.get(API_ENDPOINTS.ISSUE(id))
             .then(res => setIssue(res.data))
             .catch(err => console.error(err));
     }, [id]);

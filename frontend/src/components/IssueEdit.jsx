@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { API_ENDPOINTS } from "../config/api";
 
 const IssueEdit = () => {
     const { id } = useParams();
@@ -19,7 +20,7 @@ const IssueEdit = () => {
     // Fetch issue data on mount
     useEffect(() => {
         axios
-            .get(`http://localhost:5000/api/issues/${id}`)
+            .get(API_ENDPOINTS.ISSUE(id))
             .then((res) => setFormData(res.data))
             .catch((err) => console.error("Error loading issue:", err));
     }, [id]);
@@ -33,7 +34,7 @@ const IssueEdit = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:5000/api/issues/${id}`, formData);
+            await axios.put(API_ENDPOINTS.ISSUE(id), formData);
             navigate("/");
         } catch (err) {
             console.error("Update failed:", err);

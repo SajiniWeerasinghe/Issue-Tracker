@@ -85,8 +85,8 @@ _Form to update existing issues_
 
 The application is successfully deployed and accessible online:
 
-- **(Vercel):** [Frontend](https://issue-tracker-ivory-omega.vercel.app/)
-- **(Railway):** [Backend](issue-tracker-production-87cf.up.railway.app)
+- **Frontend (Vercel):** [https://issue-tracker-ivory-omega.vercel.app](https://issue-tracker-ivory-omega.vercel.app)
+- **Backend API (Railway):** [https://issue-tracker-production-87cf.up.railway.app](https://issue-tracker-production-87cf.up.railway.app)
 
 ### Deployment Status
 
@@ -208,7 +208,6 @@ The frontend will start on `http://localhost:5173`.
 3. **Access the Application:**
 
 Open your browser and navigate to `http://localhost:5173`
-
 
 ### First Time Setup
 
@@ -363,7 +362,6 @@ Issue-Tracker/
 
 - `npm start` - Start production server
 - `npm run dev` - Start development server with nodemon
-
 
 ## 👨‍💻 Author
 

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import IssueListHeader from "./IssueListHeader";
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from "../context/AuthContext";
+import { API_ENDPOINTS } from "../config/api";
 
 
 
@@ -20,7 +21,7 @@ const IssueList = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:5000/api/issues")
+            .get(API_ENDPOINTS.ISSUES)
             .then((res) => setIssues(res.data))
             .catch((err) => console.error(err));
     }, []);
@@ -30,7 +31,7 @@ const IssueList = () => {
     const handleDelete = async (issueId) => {
         if (window.confirm("Are you sure you want to delete this issue?")) {
             try {
-                await axios.delete(`http://localhost:5000/api/issues/${issueId}`);
+                await axios.delete(API_ENDPOINTS.ISSUE(issueId));
                 setIssues((prev) => prev.filter((issue) => issue._id !== issueId)); // Remove from UI
             } catch (err) {
                 console.error("Error deleting issue:", err);
